@@ -1,3 +1,4 @@
+from flask import render_template
 from flask import *
 # welcome page
 
@@ -6,7 +7,7 @@ app=Flask(__name__)
 @app.route('/')
 def hello_flask():
  x = "Welcome you have successfully logged in to your account  █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█"
- return x
+ return render_template('welcome.html')
 
 if __name__=="__main__":
     app.run(debug=True)
