@@ -26,7 +26,7 @@ try:
 
             cur.execute(create_script)
 
-            insert_script = 'INSERT INTO ric (id, name,password) VALUES (%s, %s, %s, %s)'
+            insert_script = 'INSERT INTO ric (id, name,password) VALUES (%s, %s, %s)'
             insert_values = [(1, 'Name1', 'pass1'), (2, 'Name2', 'pass2'), (3, 'Name3', 'pas3')]
             for record in insert_values:
                 cur.execute(insert_script, record)
