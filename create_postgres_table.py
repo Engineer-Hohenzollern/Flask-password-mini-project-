@@ -1,5 +1,6 @@
 # we are using SqlAlchemy ORM object-relational map) to create a Postgres table using Python classes
 # Please disregard this script. I'm experiencing difficulties creating tables using ORM and classes, so I'm going to use psycopg2 and SQL queries instead . 
+# please refer create_db_Table.py
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
